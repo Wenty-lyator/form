@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "libs";
+
+
+.wrapper {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size : 11px;
+   letter-spacing : -0.28px;
+   text-align: center;
+   color: #818587;
+   background-color: rgb(129, 133, 135);
+}
+
+.form {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 20px;
+   background-color: #fff;
+   max-width: 1000px;
+   max-height: 620px;
+   overflow: hidden;
+   margin: 5% auto;
+
+   &__images {
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+
+   &__items {
+      margin: 0 auto;
+      min-width: 420px;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__title {
+      margin: 5% 0;
+   }
+
+   &__input {
+      outline: none;
+      width: 285px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #DFE7EA;
+      border: 1px solid #C5D0D3;
+   }
+
+   &-gender {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 300px;
+   }
+
+   &__gender {
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+      &-btn {
+         outline: none;
+         width: 40px;
+         height: 40px;
+         border: none;
+         border-radius: 50px;
+         transition: all 0.5s;
+         &:hover {
+            background-color: #95EB75;
+         }
+      }
+      &-male {
+         background-color: #4c1ad6;
+         &-active {
+            background-color: #f7e94d;
+         }
+      }
+      &-female {
+         background-color: #fa75c9;
+         &-active {
+            background-color: #fc7135;
+         }
+      }
+      &-img {
+         width: 18px;
+         height: 18px;
+      }
+   }
+
+   &__sub {
+      margin-top: 15px;
+   }
+
+   &__subs {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-right: 20px;
+   }
+
+   &__subscription {
+      margin: 0 25px;
+      background: none;
+      border: none;
+      color: #FBB03B;
+      outline: none;
+      transition: all 0.4s;
+   }
+
+   &__buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0 0 100px;
+   }
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__btn {
+      width: 140px;
+      height: 40px;
+      color: #818587;
+      border: none;
+      border-radius: 5px;
+      background-color: #F5F8F9;
+      transition: all 0.4s;
+      outline: none;
+      &:hover {
+         color: #fff;
+         background-color: #95EB75;
+      }
+   }
+}
+
+
+@media (max-width: 940px){
+   .form {
+      max-width: 620px;
+      min-height: 800px;
+   }
+   .form__images {
+      display: none;
+   }
+}
+
+@media (max-width: 500px){
+   .form {
+      min-height: 1000px;
+   }
+   .form__item {
+      flex-direction: column;
+   }
+   .form__input, .form-gender {
+      margin: 0 auto;
+   }
+   .form__subs {
+      justify-content: space-around;
+      margin: 20px 0;
+   }
+   .form__buttons {
+      margin: 30px 0;
+   }
+}
+
+@media (max-width: 450px){
+   .form {
+      max-width: 350px;
+   }
+   .form__items {
+      min-width: 305px; 
+   }
+}
+
+@media (max-width: 360px){
+   .form {
+      min-height: 1200px;
+   }
+   .form__items {
+      min-width: 120px;
+   }
+   .form__input {
+      width: 200px;
+   }
+   .form-gender, .form__buttons, .form__subs {
+      flex-direction: column;
+      align-items: center;
+   }
+   .form__gender, .form__btn, .form__subscription {
+      margin: 15px 0;
+   }
+}
+
+
+.bronze {
+   color: #95EB75;
+   &-active, &:hover {
+      color: #cd7f32;
+   }
+}
+
+.gold {
+   color: #95EB75;
+   &-active, &:hover {
+      color: #fdb700;
+   }
+}
+
+.silver {
+   color: #95EB75;
+   &-active, &:hover {
+      color: #c0c0c0;
+   }
+}
+
+@import "media";

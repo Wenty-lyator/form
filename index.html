@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>form</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <form>
+      <div class="wrapper">
+         <div class="form">
+
+            <div class="form__images">
+               <img src="img/background.png" alt="background" class="form__img">
+            </div>
+
+            <div class="form__items">
+
+               <div class="form__item">
+                  <h3 class="form__title">Name</h3>
+                  <input type="text" required placeholder="Введите ваше имя" class="form__input">
+               </div>
+
+               <div class="form__item">
+                  <h3 class="form__title">Gender</h3>
+
+                  <div class="form-gender">
+
+                     <div class="form__gender">
+                        <button id="gender-male" class="form__gender-btn form__gender-male">
+                           <img src="img/Ресурс 3.svg" alt="male" class="form__gender-img">
+                        </button>
+                        <h3>Male</h3>
+                     </div>
+
+                     <div class="form__gender">
+                        <button id="gender-female" class="form__gender-btn form__gender-female">
+                           <img src="img/Ресурс 4.svg" alt="female" class="form__gender-img">
+                        </button>
+                        <h3>Female</h3>
+                     </div>
+
+                  </div>
+               </div>
+
+               <div class="form__item">
+                  <h3 class="form__title">Date of Birth</h3>
+                  <input type="text" required placeholder="Введите ваш день рождения" class="form__input">
+               </div>
+
+               <div class="form__item">
+                  <h3 class="form__title">Email</h3>
+                  <input type="text" required placeholder="Введите вашу электронную почту" class="form__input">
+               </div>
+
+               <div class="form__item">
+                  <h3 class="form__title">City</h3>
+                  <input type="text" required placeholder="Введите ваш город" class="form__input">
+               </div>
+
+               <div class="form__item">
+                  <h3 class="form__title">Country</h3>
+                  <input type="text" required placeholder="Введите вашу страну" class="form__input">
+               </div>
+
+               <div class="form__item form__sub">
+                  <h3 class="form__title">Subscription</h3>
+                  <div class="form__subs">
+                     <button id="bronze" class="form__subscription bronze">Bronze</button>
+                     <button id="silver" class="form__subscription silver">Silver</button>
+                     <button id="gold" class="form__subscription gold">Gold</button>
+                  </div>
+               </div>
+
+               <div class="form__buttons">
+                  <a class="form__btn form__link">Cancel</a>
+                  <button class="form__btn" type="submit">Save</button>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+   </form>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
